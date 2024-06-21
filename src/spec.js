@@ -1,18 +1,49 @@
 const specs = [
   {
-    name: 'Rick and Morty GraphQL API',
-    apiName: 'rick-and-morty-graphql',
+    name: "Rick and Morty GraphQL API",
+    apiName: "rick-and-morty-graphql",
     tutorialMarkdown: `
-### Rick and Morty GraphQL API Documentation
-ADD CONTENT HERE:
-    `
+### Rick and Morty GraphQL API: A Quick Start Guide
+
+Welcome to the Rick and Morty GraphQL API! This guide will walk you through the basic use cases for the API, helping you to retrieve and manipulate data from the popular TV show. Whether you're a developer looking to integrate Rick and Morty data into your project or just a fan curious about the show's universe, this guide is for you.
+
+## What is GraphQL?
+
+GraphQL is a query language for APIs that allows clients to request exactly the data they need. It enables more efficient and flexible data retrieval compared to REST APIs. With GraphQL, you can specify the structure of the response, which can reduce the amount of data transferred over the network and simplify client-side code.
+
+## Getting Started
+
+To use the Rick and Morty GraphQL API, you'll need to send HTTP POST requests to the API endpoint. You can use tools like [Postman](https://www.postman.com/), or your favorite code editor to make these requests.
+
+### API Endpoint
+
+The base URL for the Rick and Morty GraphQL API is: [Rick and Morty GraphQL API](https://rickandmortyapi.com/graphql)
+
+### EndPoints
+
+- **Characters**: Information about characters appearing in the series.
+- **Locations**: Details on various locations featured in the show.
+- **Episodes**: Data related to each episode, including air date, episode number, and characters appearing in each episode.
+
+### Use Cases
+ ##### For Developers:
+1. Building Dynamic Features Fan sites, trivia games, educational tools related to storytelling or animation.
+2. Use GraphQL queries to fetch specific data for personalized user experiences.
+
+ ##### For Business Owners:
+ 1. Develop interactive features such as character encyclopedias, episode trackers, or fan portals.
+ 2. Potential for unique marketing campaigns.
+
+    `,
   },
+
   {
     name: "Rick and Morty API",
     apiName: "rick-and-morty",
     specPath: "/rick-and-morty.json",
     shouldAllowTry: true,
     tutorialMarkdown: `
+
 ### Rick and Morty API Documentation
 
 Welcome to the official documentation for the Rick and Morty API. This API provides access to data from the popular animated TV series "Rick and Morty," created by Justin Roiland and Dan Harmon. The API serves as a comprehensive resource for developers looking to integrate information about characters, locations, and episodes into their applications.
@@ -37,9 +68,14 @@ The API offers several endpoints to access different types of data:
 - **Location Endpoints**: Access details about locations featured in the series, including name, type, dimension, and residents.
 - **Episode Endpoints**: Obtain information about episodes, including their name, air date, episode number, and list of characters appearing in each episode.
 
-#### Usage
+#### Use Cases
+ ##### For Developers:
+1. Building Dynamic Features Fan sites, trivia games, educational tools related to storytelling or animation.
+2. Use GraphQL queries to fetch specific data for personalized user experiences.
 
-Developers can integrate the Rick and Morty API into their applications to enhance user experience by leveraging detailed information about characters, locations, and episodes from the series. The API responses are structured to provide comprehensive data, facilitating easy integration into various projects.
+ ##### For Business Owners:
+ 1. Develop interactive features such as character encyclopedias, episode trackers, or fan portals.
+ 2. Potential for unique marketing campaigns.
 
 #### Rate Limiting
 
@@ -74,7 +110,7 @@ The Unsplash API is RESTful and designed to be easy to use, offering endpoints t
 
 #### Authentication
 
-Authentication with the Unsplash API is required for certain endpoints to ensure security and track usage. Developers can authenticate using OAuth 2.0, which provides secure access to user-specific data and actions.
+ Authentication with the Unsplash API is required for certain endpoints to ensure security and track usage. Developers can [authenticate](https://unsplash.com/documentation#authorization) using OAuth 2.0, which provides secure access to user-specific data and actions.
 
 #### Endpoints
 
@@ -84,18 +120,26 @@ The API provides several endpoints to retrieve and interact with different types
 - **Search Endpoints**: Perform searches for photos based on keywords, categories, or specific criteria.
 - **Collection Endpoints**: Access curated collections of photos, including featured collections and user-created collections.
 - **User Endpoints**: Obtain information about photographers and users, including their profiles, portfolios, and uploaded photos.
+#### Getting Started
 
-#### Usage
+To begin using the Unsplash API, developers need to [register](https://unsplash.com/documentation#creating-a-developer-account) for an API key, which is required for authentication. Detailed documentation and examples are provided to guide developers through the integration process, including how to authenticate requests and handle responses.
 
-Developers can leverage the Unsplash API to enhance their applications with high-quality visual content. By integrating photo search capabilities and curated collections, applications can provide users with access to a vast library of professional photographs from around the world.
+#### Use cases
+##### For Developers: 
+1. Easy Integration for Enhanced UX
+2. Building Dynamic Features especially for image heavy platforms. e.g Travel Apps, 
+
+##### For Business Owners:
+1. Enhancing Market Campaigns.
+2. Improving User Engagement.
+3. Streamlining Content Creation.
+
 
 #### Rate Limiting
 
 To ensure fair usage and maintain performance, the Unsplash API enforces rate limits on requests. Rate limits are based on the API key used for authentication and are designed to prevent abuse while allowing for efficient access to data.
 
-#### Getting Started
 
-To begin using the Unsplash API, developers need to register for an API key, which is required for authentication. Detailed documentation and examples are provided to guide developers through the integration process, including how to authenticate requests and handle responses.
 
 #### Feedback and Support
 

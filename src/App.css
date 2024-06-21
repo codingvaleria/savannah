@@ -101,3 +101,20 @@
   margin: 0 auto;
   padding: 20px;
 }
+
+#home .buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+#home button {
+  padding: 0.5rem 1rem;
+  background-color: #8bc34a;
+  outline: none;
+  border: none;
+}
+
+#home a {
+  text-decoration: none;
+  border-radius: 5px;
+}

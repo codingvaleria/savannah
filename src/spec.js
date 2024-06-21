@@ -1,5 +1,13 @@
 const specs = [
   {
+    name: 'Rick and Morty GraphQL API',
+    apiName: 'rick-and-morty-graphql',
+    tutorialMarkdown: `
+### Rick and Morty GraphQL API Documentation
+ADD CONTENT HERE:
+    `
+  },
+  {
     name: "Rick and Morty API",
     apiName: "rick-and-morty",
     specPath: "/rick-and-morty.json",

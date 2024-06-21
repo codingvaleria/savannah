@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./css/prismjs.css"
 import "./App.css";
 import Home from "./components/Home";
 import APITutorial from "./components/APITutorial";

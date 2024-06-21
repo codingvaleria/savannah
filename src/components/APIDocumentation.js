@@ -2,6 +2,7 @@ import "rapidoc";
 import specs from "../spec";
 import { useParams } from "react-router-dom";
 import APINavigation from "./APINavigation";
+import RickAndMortyGraphQL from "./GraphQL";
 
 function APIDocumentation() {
   const { apiName } = useParams();
@@ -10,14 +11,19 @@ function APIDocumentation() {
   return (
     <>
       <APINavigation apiName={apiName} />
-      <rapi-doc
-        spec-url={spec.specPath}
-        render-style="read"
-        layout="row"
-        show-header={false}
-        style={{ height: "100vh", width: "100%" }}
-        allow-try={spec.shouldAllowTry}
-      ></rapi-doc>
+      {
+        spec.apiName === 'rick-and-morty-graphql' ?
+          <RickAndMortyGraphQL />
+        :
+          <rapi-doc
+            spec-url={spec.specPath}
+            render-style="read"
+            layout="row"
+            show-header={false}
+            style={{ height: "100vh", width: "100%" }}
+            allow-try={spec.shouldAllowTry}
+          ></rapi-doc>
+      }
     </>
   );
 }

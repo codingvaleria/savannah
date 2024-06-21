@@ -1,0 +1,56 @@
+#rick-and-morty-graphql {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+#rick-and-morty-graphql .left,
+#rick-and-morty-graphql .right {
+    width: 47%;
+    height: 30rem;
+    min-width: calc(min(94%, 30rem));
+}
+  
+#rick-and-morty-graphql .sample-query {
+    height: 25rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+#rick-and-morty-graphql textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    resize: none;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#rick-and-morty-graphql .fa {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+    cursor: pointer;
+    background-color: purple;
+}
+  
+#rick-and-morty-graphql .sample-response {
+    margin: 0;
+    height: 25rem;
+    overflow-y: scroll;
+    background-color: rgb(39, 40, 34);
+}
+
+#rick-and-morty-graphql pre {
+    padding: 1rem;
+}
